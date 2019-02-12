@@ -1,5 +1,4 @@
-package com.zipcodewilmington;
-
+ 
 /**
  * Created by leon on 1/24/18.
  */
@@ -21,6 +20,20 @@ public class PersonHandler {
                 // append `stringRepresentation` to `result` variable
 
             // end loop
+            int counter = 0;
+            String stringRepresentation="";
+            while (counter < personArray.length ){
+                
+               
+               stringRepresentation =  personArray[counter].toString();
+                 result = result + stringRepresentation;
+                counter ++;
+                
+                
+                
+            }
+            
+            
         return result;
     }
 
@@ -38,6 +51,15 @@ public class PersonHandler {
                 // get `string Representation` of `currentPerson`
                 // append `stringRepresentation` to `result` variable
             // end loop
+            String stringRepresentation = "";
+            for(int counter = 0 ; counter < personArray.length ; counter++){
+               stringRepresentation =  personArray[counter].toString();
+                 result = result +  stringRepresentation;
+                
+                
+    
+            }
+           
 
         return result;
     }
@@ -54,6 +76,17 @@ public class PersonHandler {
                 // get `string Representation` of `currentPerson`
                 // append `stringRepresentation` to `result` variable
             // end loop
+            String stringRepresentation = "";
+            
+            for( Person per : personArray){
+               stringRepresentation =  ( per.toString() );
+                 result = result +  stringRepresentation;
+                
+                
+                
+    
+            }
+           
 
         return result;
     }
